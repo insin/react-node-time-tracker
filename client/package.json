@@ -1,0 +1,24 @@
+{
+  "name": "react-time-tracker",
+  "version": "1.0.0",
+  "description": "A React app",
+  "private": true,
+  "scripts": {
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve",
+    "test": "nwb test",
+    "test:watch": "nwb test --server"
+  },
+  "dependencies": {
+    "react": "15.0.1",
+    "react-dom": "15.0.1",
+    "react-router": "2.3.0"
+  },
+  "devDependencies": {
+    "eslint-config-jonnybuchanan": "2.0.3",
+    "nwb": "0.9.2"
+  },
+  "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
+  "license": "MIT"
+}
