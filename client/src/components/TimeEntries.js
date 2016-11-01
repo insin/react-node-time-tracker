@@ -19,7 +19,7 @@ export default React.createClass({
 
       {this.props.children &&
         React.cloneElement(this.props.children, {
-          onAddTime: this.props.handleAddTime
+          onAddTime: this.props.onAddTime
         })
       }
 
