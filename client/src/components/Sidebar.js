@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 
 export default React.createClass({
   propTypes: {
-    time: PropTypes.number.isRequired
+    time: PropTypes.string.isRequired
   },
   render() {
     return <div className="panel panel-default">

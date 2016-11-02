@@ -53,7 +53,7 @@ export default React.createClass({
       </nav>
       <div className="container">
         <div className="col-sm-3">
-          <Sidebar time={totalTime}/>
+          <Sidebar time={(totalTime.toFixed(2))}/>
         </div>
         <div className="col-sm-9">
           {this.props.children &&
