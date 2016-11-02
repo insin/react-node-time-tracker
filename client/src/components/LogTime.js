@@ -7,7 +7,7 @@ export default React.createClass({
     let form = e.target
     this.props.onAddTime({
       date: form.elements.date.value,
-      totalTime: form.elements.totalTime.value,
+      totalTime: ((form.elements.totalTime.value === '') ? 0 : form.elements.totalTime.value),
       comment: form.elements.comment.value,
       user: {
         firstName: 'Ryan',
@@ -34,6 +34,8 @@ export default React.createClass({
           <label>Hours</label>
           <input
             type="number"
+            step="any"
+            min="0"
             className="form-control"
             name="totalTime"
             placeholder="Hours"
