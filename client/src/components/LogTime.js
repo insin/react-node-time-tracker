@@ -7,7 +7,7 @@ export default React.createClass({
     let form = e.target
     this.props.onAddTime({
       date: form.elements.date.value,
-      totalTime: ((form.elements.totalTime.value === '') ? 0 : form.elements.totalTime.value),
+      totalTime: ((form.elements.totalTime.value === '') ? 0 : form.elements.totalTime.value.toFixed(2)),
       comment: form.elements.comment.value,
       user: {
         firstName: 'Ryan',
